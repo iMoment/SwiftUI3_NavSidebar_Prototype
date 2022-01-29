@@ -9,8 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Navigation Sidebar Prototype")
-            .padding()
+        HomeView()
     }
 }
 
