@@ -29,22 +29,25 @@ struct Sidebar: View {
             .padding()
             .frame(maxWidth: .infinity, alignment: .leading)
             
-            // MARK: Tab Buttons
-            VStack(alignment: .leading, spacing: 25) {
-                CustomTabButton(icon: "theatermasks.fill", title: "Home")
-                CustomTabButton(icon: "safari.fill", title: "Discover")
-                CustomTabButton(icon: "applewatch", title: "Devices")
-                CustomTabButton(icon: "person.fill", title: "Profile")
-                CustomTabButton(icon: "gearshape.fill", title: "Setting")
-                CustomTabButton(icon: "info.circle.fill", title: "About")
-                CustomTabButton(icon: "questionmark.circle.fill", title: "Help")
-                
-                Spacer()
-                
-                CustomTabButton(icon: "rectangle.portrait.and.arrow.right", title: "Logout")
+            // MARK: For Small Screens
+            ScrollView(getScreenSize().height < 750 ? .vertical : .init(), showsIndicators: false) {
+                // MARK: Tab Buttons
+                VStack(alignment: .leading, spacing: 25) {
+                    CustomTabButton(icon: "theatermasks.fill", title: "Home")
+                    CustomTabButton(icon: "safari.fill", title: "Discover")
+                    CustomTabButton(icon: "applewatch", title: "Devices")
+                    CustomTabButton(icon: "person.fill", title: "Profile")
+                    CustomTabButton(icon: "gearshape.fill", title: "Setting")
+                    CustomTabButton(icon: "info.circle.fill", title: "About")
+                    CustomTabButton(icon: "questionmark.circle.fill", title: "Help")
+                    
+                    Spacer()
+                    
+                    CustomTabButton(icon: "rectangle.portrait.and.arrow.right", title: "Logout")
+                }
+                .padding()
+                .padding(.top, 60)
             }
-            .padding()
-            .padding(.top, 60)
             .frame(width: getScreenSize().width / 2, alignment: .leading)
             .frame(maxWidth: .infinity, alignment: .leading)
         }
@@ -85,7 +88,7 @@ struct Sidebar: View {
                 Text(title)
                     .font(.callout)
                     .fontWeight(.semibold)
-                    .foregroundColor(Color.white)
+                    .foregroundColor(title == "Logout" ? Color("salmon") : Color.white)
             }
             .padding(.trailing, 18)
             .background(

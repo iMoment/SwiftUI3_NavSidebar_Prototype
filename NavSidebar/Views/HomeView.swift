@@ -15,7 +15,11 @@ struct HomeView: View {
         ZStack {
             // MARK: Custom Side Menu...
             Sidebar(currentTab: $currentTab)
+            
+            // MARK: Main Tab View
+            CustomTabView(currentTab: $currentTab)
         }
+        .preferredColorScheme(.dark)
     }
 }
 
