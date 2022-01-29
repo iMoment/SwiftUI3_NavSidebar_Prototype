@@ -14,6 +14,7 @@
 		91E3DD5827A5CE1500A96BE6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E3DD5727A5CE1500A96BE6 /* HomeView.swift */; };
 		91E3DD5B27A5D09A00A96BE6 /* Sidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E3DD5A27A5D09A00A96BE6 /* Sidebar.swift */; };
 		91E3DD5D27A5DB0A00A96BE6 /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E3DD5C27A5DB0A00A96BE6 /* CustomTabView.swift */; };
+		91E3DD6027A5EB0D00A96BE6 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E3DD5F27A5EB0D00A96BE6 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		91E3DD5727A5CE1500A96BE6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		91E3DD5A27A5D09A00A96BE6 /* Sidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sidebar.swift; sourceTree = "<group>"; };
 		91E3DD5C27A5DB0A00A96BE6 /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
+		91E3DD5F27A5EB0D00A96BE6 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 		91E3DD4627A5CD8600A96BE6 /* NavSidebar */ = {
 			isa = PBXGroup;
 			children = (
+				91E3DD5E27A5EAE400A96BE6 /* Tabs */,
 				91E3DD4727A5CD8600A96BE6 /* NavSidebarApp.swift */,
 				91E3DD4927A5CD8600A96BE6 /* ContentView.swift */,
 				91E3DD5627A5CE0300A96BE6 /* Model */,
@@ -98,6 +101,14 @@
 				91E3DD5A27A5D09A00A96BE6 /* Sidebar.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		91E3DD5E27A5EAE400A96BE6 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				91E3DD5F27A5EB0D00A96BE6 /* MainView.swift */,
+			);
+			path = Tabs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				91E3DD5827A5CE1500A96BE6 /* HomeView.swift in Sources */,
+				91E3DD6027A5EB0D00A96BE6 /* MainView.swift in Sources */,
 				91E3DD4A27A5CD8600A96BE6 /* ContentView.swift in Sources */,
 				91E3DD5D27A5DB0A00A96BE6 /* CustomTabView.swift in Sources */,
 				91E3DD5B27A5D09A00A96BE6 /* Sidebar.swift in Sources */,

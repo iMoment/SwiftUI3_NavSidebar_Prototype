@@ -46,7 +46,7 @@ struct Sidebar: View {
                     CustomTabButton(icon: "rectangle.portrait.and.arrow.right", title: "Logout")
                 }
                 .padding()
-                .padding(.top, 60)
+                .padding(.top, 45)
             }
             .frame(width: getScreenSize().width / 2, alignment: .leading)
             .frame(maxWidth: .infinity, alignment: .leading)
